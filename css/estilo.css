@@ -5,6 +5,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.limitar-secao {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
 /* Topo da página */
 .container-topo {
     background-color: white;
@@ -53,8 +59,11 @@
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    gap: 90px;
+    
 }
 .paragrafo-flex{
     flex: 1 1 300px;
@@ -76,13 +85,9 @@
 /* Banner da página */
 .secao-banner {
     background-color: #2f86d6;
-    padding: 100px 0px;
+    padding: 90px 0px;
 }
 
-.container-banner {
-    position: relative;
-    padding: 180px 0px;
-}
 
 .container-banner div{
     color: #fff;
@@ -101,12 +106,7 @@
     margin: 20px 0px;
 }
 
-.container-banner img {
-    width: 50%;
-    position: absolute;
-    top: 100px;
-    right: 0;
-}
+
 
 /* Seção Primeiro Anúncio */
 
@@ -119,19 +119,23 @@
     justify-content: space-evenly;
 }
 
-.container-primeiro-anuncio div, .container-segundo-anuncio div {
+.container-primeiro-anuncio div{
     width: 600px;
 }
 
-.container-primeiro-anuncio div h2, .container-segundo-anuncio div h2 {
+.container-primeiro-anuncio div h2{
     margin-bottom: 5px;
 }
 .paragrafo-anuncio{
     width: 50%;
     max-width: 500px;
+    text-align: center;
+    margin-left: 10px;
 }
 .botao{
-    width: 50%;
+    width: 100%;
+    max-width: 260px;
+    margin-top: 15px;
 }
 .container-primeiro-anuncio a {
     display: flex;
@@ -146,6 +150,8 @@
     background-color: #2f86d6;
     color: #fff;
     cursor: pointer;
+    position: relative;
+ 
 }
 
 .container-primeiro-anuncio a img {
@@ -159,7 +165,6 @@
 .container-primeiro-anuncio a span {
     margin-left: 30px;
 }
-
 
 /* Seção Informações */
 .secao-informacoes {
@@ -189,8 +194,6 @@
     max-width: 1024px;
     width: 100%;
 }
-
-
 
 .card1, .card2, .card3 {
     display: flex;
@@ -247,8 +250,8 @@ table thead th h3 {
 table thead th img {
     width: 100px;
     margin: auto;
+    gap: 40px;
     display: flex;
-    justify-content: space-evenly;
 }
 
 table thead th p {
@@ -275,50 +278,6 @@ table tbody td {
 .linha-par {
     background-color: #fff;
 }
-
-
-/* Seção Segundo Anúncio */
-
-.container-segundo-anuncio {
-    background-color: #2f86d6;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 40px 0;
-}
-
-.container-segundo-anuncio h2 {
-    color: #fff;
-    display: flex;
-}
-
-.container-segundo-anuncio a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 20px; 
-    border-radius: 4px;
-    text-decoration: none;
-    text-align: center;
-    background-color: #233032;
-    color: #fff;
-    cursor: pointer;
-}
-
-.container-segundo-anuncio a img {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    width: 20px;
-    margin-left: 20px;
-}
-
-.container-segundo-anuncio a span {
-    margin-left: 30px;
-}
-
 
 /* Rodapé */
 .rodape-logo {
