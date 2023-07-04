@@ -5,12 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.limitar-secao {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
 /* Topo da página */
 .container-topo {
     background-color: white;
@@ -190,8 +184,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
-    justify-content: space-evenly;
-    max-width: 1024px;
+    justify-content: space-around;
+    
     width: 100%;
 }
 
@@ -231,8 +225,9 @@ table {
     margin: auto;
     overflow-x: scroll;
     display: flex;
+    box-shadow: 0px 2px 40px 15px rgba(47,134,214,1);
     flex-direction: column;
-    flex-wrap: wrap;
+
     max-width: 1024px;
     width: 100%;
 }
@@ -240,6 +235,8 @@ table {
 table thead th {
     text-align: center;
     padding: 20px 0px;
+    
+    
     background-color: #fff;
 }
 
@@ -250,7 +247,6 @@ table thead th h3 {
 table thead th img {
     width: 100px;
     margin: auto;
-    gap: 40px;
     display: flex;
 }
 
@@ -269,6 +265,7 @@ table tbody td {
     text-align: center;
     font-weight: 500;
     padding: 15px;
+
 }
 
 .linha-impar {
@@ -280,6 +277,8 @@ table tbody td {
 }
 
 /* Rodapé */
+
+
 .rodape-logo {
     width: 320px;
     position: relative;
@@ -304,9 +303,10 @@ table tbody td {
 .container-contatos {
     text-align: center;
     margin-bottom: 50px;
-    line-height: 40px;
+    line-height: 42px;
     font-size: 16px;
     font-weight: 600;
+    margin: 0 4px;
 }
 
 .container-copyright {
@@ -316,7 +316,17 @@ table tbody td {
     padding: 20px 0px;
     background-color: #f1f3f7;
 }
-
-.container-copyright span {
+.texto-azul{
     color: #2f86d6;
+}
+.texto-preto{
+    color: #000;
+}
+.back{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+.back p, .back h1{
+    color: #fff;
 }
